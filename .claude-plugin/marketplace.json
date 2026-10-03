@@ -1,0 +1,12 @@
+{
+  "name": "unboxers-company",
+  "owner": {
+    "name": "Unboxers"
+  },
+  "plugins": [
+    {
+      "name": "company-brain",
+      "source": "./plugins/company-brain"
+    }
+  ]
+}

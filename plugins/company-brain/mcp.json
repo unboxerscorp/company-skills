@@ -1,0 +1,1 @@
+{"$schema":"https://agent-plugins.org/schemas/1.0.0/mcp.schema.json","mcpServers":{"company-brain":{"type":"streamable-http","url":"https://base-inbrain-develop.taile4260.ts.net/company-brain/mcp"}}}

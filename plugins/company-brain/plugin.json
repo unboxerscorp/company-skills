@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "company-brain",
+  "version": "0.2.2",
+  "description": "Unboxers company context and verified work records across departments.",
+  "author": {"name": "Unboxers"},
+  "extensions": {"com.openai": {"interface": {
+    "displayName": "Company Brain",
+    "shortDescription": "회사 기억 조회와 업무 결과 기록",
+    "developerName": "Unboxers",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "defaultPrompt": ["Company Brain을 적용해서 회사 업무를 진행하고 결과를 기록해줘."]
+  }}}
+}
