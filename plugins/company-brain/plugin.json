@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "company-brain",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Unboxers company context and verified work records across departments.",
   "author": {"name": "Unboxers"},
   "extensions": {"com.openai": {"interface": {
