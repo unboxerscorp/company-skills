@@ -4,7 +4,9 @@
 
 ## 관리
 
-`plugins/company-brain/skills/`가 Company Brain 세 스킬의 원본이다. 공통 플러그인도 이 저장소에서 관리한다. 새 스킬은 해당 플러그인의 skills 디렉터리에 추가하고 직원 페이지의 목록을 함께 갱신한다.
+`plugins/company-brain/skills/`가 회사 공용 스킬의 원본이다. 공통 플러그인도 이 저장소에서 관리한다. 새 스킬은 해당 플러그인의 skills 디렉터리에 추가하고 직원 페이지의 목록을 함께 갱신한다.
+
+`company-spec`은 제품·업무 규칙과 설계 근거를 OpenSpec 방식으로 관리한다. 기존 문서의 정본을 먼저 찾고 변경 규모에 맞는 문서만 작성한다. 한국어 본문과 OpenSpec 구조를 사용하며, 템플릿은 스킬의 `assets/`에 있다. 기존 문서 일괄 변환과 OpenSpec CLI 설치는 자동 수행하지 않는다.
 
 서버·OAuth·Company Brain 데이터·기존 설치 패키지는 [company-brain](https://github.com/unboxerscorp/company-brain)에서 관리한다. 그 저장소에는 이 원본의 고정 커밋 스냅샷을 배포 호환용으로 유지한다. 두 곳에서 따로 수정하지 않는다.
 
