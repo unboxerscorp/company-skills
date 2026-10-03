@@ -19,3 +19,7 @@ Codex·Claude Code용 Git 기반 플러그인 마켓플레이스와 직원용 �
 ## Company Skills 관리 스킬
 
 직원은 company-skills 하나를 설치한다. 회사 작업에 이 스킬을 적용할 때 공개 catalog.json과 SHA-256 파일 목록을 확인한다. Codex·Claude Code에서는 관리 중인 설치만 추가·갱신·제거하고 개인 설치와 로컬 수정은 보존한다. ChatGPT·Claude에서는 최신 지침을 읽어 적용하며 앱 설치 UI는 별도 조작이 필요할 수 있다. 자동 배경 실행이 아니다. 검증: python3 scripts/test-sync.py.
+
+## 저장소 연결
+
+모든 회사 저장소는 개별 스킬 대신 `company-skills`를 공통 진입점으로 연결한다. [공통 지침 블록](site/repository-instructions.md)을 기존 AGENTS.md·CLAUDE.md의 공유 지침에 추가하고 저장소 고유 규칙을 보존한다. 새 스킬과 변경·제거는 공용 카탈로그를 통해 반영한다.
