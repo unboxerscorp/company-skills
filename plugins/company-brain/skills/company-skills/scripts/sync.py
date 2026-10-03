@@ -7,6 +7,7 @@ from pathlib import Path, PurePosixPath
 import re
 import shutil
 import tempfile
+import time
 import urllib.request
 
 BASE = 'https://unboxerscorp.github.io/company-skills/'
@@ -19,7 +20,8 @@ def fetch(path):
     p = PurePosixPath(path)
     if not path or p.is_absolute() or any(x in ('.', '..') for x in path.split('/')) or ':' in path or '\\' in path:
         raise ValueError('Invalid download path')
-    with urllib.request.urlopen(BASE + path, timeout=20) as response:
+    request = urllib.request.Request(BASE + path + '?check=' + str(time.time_ns()), headers={'Cache-Control': 'no-cache'})
+    with urllib.request.urlopen(request, timeout=20) as response:
         if not response.url.startswith(BASE):
             raise ValueError('Unexpected download host')
         data = response.read(4_000_001)
