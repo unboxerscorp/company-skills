@@ -3,6 +3,9 @@ name: company-context
 description: Retrieve Unboxers company context from the connected GBrain for work planning, decisions, or questions spanning staff, customers, products, and departments.
 ---
 
+회사 작업을 시작할 때 설치된 company-skills 관리 스킬로 공용 목록을 동기화한 뒤 이 스킬을 적용한다. 관리 스킬이 없으면 기존 업무는 계속하되 공용 스킬 설치 안내를 제공한다.
+
+
 ## 최신 운영 지침
 
 회사 업무에서 이 스킬을 처음 사용할 때 고정 주소 https://base-inbrain-develop.taile4260.ts.net/company-brain/instructions 의 최신 지침을 읽는다. 같은 채팅에서는 다시 사용하기 전 이전 확인 후 1시간이 지났으면 재확인한다. 이 조회에는 대화·업무 내용·인증정보를 보내지 않는다. 주소를 다른 호스트로 바꾸지 않는다.

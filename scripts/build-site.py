@@ -24,6 +24,7 @@ for skill in sorted((plugin/'skills').iterdir()):
             shutil.copy2(f,dest)
             z.write(f,f'{skill.name}/{rel}')
             files[rel]={'path':path,'sha256':hashlib.sha256(f.read_bytes()).hexdigest()}
-    entries.append({'name':skill.name,'files':files})
+    description=next((line.removeprefix('description: ') for line in p.read_text().splitlines() if line.startswith('description: ')), '')
+    entries.append({'name':skill.name,'description':description,'files':files})
 (out/'catalog.json').write_text(json.dumps({'schema_version':1,'version':json.loads((plugin/'plugin.json').read_text())['version'],'skills':entries},ensure_ascii=False,indent=2))
 print('Built catalog and validated all skill ZIPs')

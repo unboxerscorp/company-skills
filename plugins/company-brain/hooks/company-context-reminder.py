@@ -7,6 +7,7 @@ def reminder(event):
     if event.get('hook_event_name') != 'SessionStart':
         return {}
     return {'hookSpecificOutput': {'hookEventName': 'SessionStart', 'additionalContext':
+        '명확한 회사 업무에서는 먼저 company-skills 관리 스킬로 회사 목록을 동기화하세요. '
         '최신 운영 지침은 company-brain 스킬의 고정 /company-brain/instructions 주소에서 확인하세요. '
         '명확한 Unboxers 회사 업무에서는 company-brain 스킬을 적용해 관련 회사 기억을 조회하고 '
         '중요한 변경 및 검증된 완료 결과를 답변 전에 company source에 기록하세요. '
